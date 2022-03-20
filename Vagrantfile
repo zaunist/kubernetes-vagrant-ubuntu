@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box_check_update = false
 
-	(10..13).each do |i|
+	(10..11).each do |i|
 
 		config.vm.define "node#{i}" do |node|
 
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
 			v.name = "node#{i}"
 
 			# 设置虚拟机的内存大小  
-			v.memory = 2048
+			v.memory = 4096
 
 			# 设置虚拟机的CPU个数
 			v.cpus = 2
