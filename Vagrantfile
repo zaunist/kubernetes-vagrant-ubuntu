@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box_check_update = false
 
-	(1..3).each do |i|
+	(10..13).each do |i|
 
 		config.vm.define "node#{i}" do |node|
 
